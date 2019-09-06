@@ -1,0 +1,27 @@
+//
+//  Lottie-Prefix.pch
+//  LottieDemo
+//
+//  Created by 张波 on 2019/9/6.
+//  Copyright © 2019 张波. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef Lottie_Prefix_pch
+#define Lottie_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+
+	#if __has_include(<Lottie/Lottie.h>)
+		#import <Lottie/Lottie.h>
+	#endif
+
+#endif
+
+#endif /* Lottie_Prefix_pch */
